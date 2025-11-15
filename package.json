@@ -3,5 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Adam1985-A/todo-list.git",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.27"
+  }
 }
