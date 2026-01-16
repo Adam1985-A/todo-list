@@ -10,17 +10,23 @@
     "dev": "nodemon --exec babel-node src/app.js"
   },
   "dependencies": {
-    "@babel/cli": "^7.28.3",
-    "@babel/core": "^7.28.5",
-    "@babel/node": "^7.28.0",
-    "@babel/preset-env": "^7.28.5",
     "bcryptjs": "^3.0.3",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.3",
-    "nodemon": "^3.1.11",
     "pg": "^8.16.3",
     "reflect-metadata": "^0.2.2",
     "typeorm": "^0.3.27"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/node": "^7.28.0",
+    "@babel/preset-env": "^7.28.5",
+    "baseline-browser-mapping": "^2.9.14",
+    "nodemon": "^3.1.11"
+  },
+  "engine": {
+    "node": ">=18.0.0"
   }
 }

@@ -7,6 +7,7 @@ import UserEntity from "../entities/user.entity.js";
 
 const AppDataSource = new DataSource({
     type: "postgres",
+    url: process.env.DATABASE_URL,
     host: "localhost",
     port: [5432, 10],
     username: "postgres",
@@ -14,6 +15,9 @@ const AppDataSource = new DataSource({
     database: "todo-list",
     synchronize: true,
     logging: false,
+    ssl: process.env.NODE_ENV === "production" 
+    ? { rejectUnauthorized: false } 
+    : false,
     entities: [TodoEntity, UserEntity],
     migrations: [],
     subscribers: [],
