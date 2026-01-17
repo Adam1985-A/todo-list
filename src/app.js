@@ -1,6 +1,5 @@
 if(process.env.NODE_ENV !== "production") {
-const dotenv = await import("dotenv");
-dotenv.config();
+require("dotenv").config();
 }
 import express from 'express';
 import AppDataSource from './database/data-source';
