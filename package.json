@@ -1,18 +1,15 @@
 {
   "name": "todo-list",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/app.js",
   "repository": "https://github.com/Adam1985-A/todo-list.git",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "start": "node dist/app.js",
-    "build": "npx babel src -d dist",
-    "dev": "nodemon --exec babel-node src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "dependencies": {
-    "@babel/cli": "^7.28.6",
-    "@babel/core": "^7.28.6",
-    "@babel/preset-env": "^7.28.6",
     "bcryptjs": "^3.0.3",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
@@ -22,7 +19,6 @@
     "typeorm": "^0.3.27"
   },
   "devDependencies": {
-    "@babel/node": "^7.28.0",
     "baseline-browser-mapping": "^2.9.14",
     "nodemon": "^3.1.11"
   },

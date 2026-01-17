@@ -1,8 +1,7 @@
-if(process.env.NODE_ENV !== "production") {
-require("dotenv").config();
-}
+import dotenv from 'dotenv';
+dotenv.config();
 import express from 'express';
-import AppDataSource from './database/data-source';
+import AppDataSource from './database/data-source.js';
 import todoRoutes from './routes/todo.route.js';
 import authRoutes from './routes/auth.route.js';
 
