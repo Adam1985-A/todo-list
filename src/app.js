@@ -1,5 +1,7 @@
-import dotenv from "dotenv";
+if(process.env.NODE_ENV !== "production") {
+const dotenv = await import("dotenv");
 dotenv.config();
+}
 import express from 'express';
 import AppDataSource from './database/data-source';
 import todoRoutes from './routes/todo.route.js';
